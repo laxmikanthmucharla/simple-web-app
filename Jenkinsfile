@@ -6,7 +6,7 @@ tools	{
 			maven 'localMaven'
 		}
 stages	{
-		stage ( "Build" )	{
+		stage ( 'Build' )	{
 								steps 	{
 											sh 'mvn clean package'
 										}
@@ -17,7 +17,7 @@ stages	{
 													}
 										}
 							}
-		stage ( "Deployments" )	{
+		stage ( 'Deployments' )	{
 									steps	{
 												echo 'deploying application'
 												deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat-credentials', path: '', url: 'http://3.25.101.137:8080/')], contextPath: null, war: '*.war'
