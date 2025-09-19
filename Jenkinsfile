@@ -13,7 +13,7 @@ stages	{
 								post	{
 											success {
 													echo 'maven clean package executed'
-													archiveArtifacts artifacts: '**/target/*.war', followSymlinks: false
+													archiveArtifacts artifacts: '**/target/*.war'
 													}
 										}
 							}
