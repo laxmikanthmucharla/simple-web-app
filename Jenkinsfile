@@ -1,8 +1,9 @@
+pipeline {
 agent 	{
-			label JavaBuildServer
+			label 'JavaBuildServer'
 		}
 tools	{
-			maven localMaven
+			maven 'localMaven'
 		}
 stages	{
 		stage ( "build" )	{
@@ -16,3 +17,4 @@ stages	{
 										}
 							}
 		}
+}
