@@ -22,7 +22,7 @@ stages	{
 									steps	{
 												echo 'deploying application'
 												sh 'pwd'
-												deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat-credentials', path: '', url: 'http://3.27.198.230:8080')], contextPath: null, war: '*.war'
+												deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat-credentials', path: '', url: 'http://13.211.239.170:8080')], contextPath: null, war: '*.war'
 											}
 											
 								}
